@@ -70,6 +70,10 @@
         CDVViewController *viewController = (CDVViewController *)self.viewController;
         self.alipayScheme = [viewController.settings objectForKey:@"alipay"];
         
+        if (!self.alipayScheme) {
+        	self.alipayScheme = [params objectForKey:@"scheme"];
+        }
+        
        
        [[AlipaySDK defaultService] payOrder:payInfo fromScheme:self.alipayScheme callback:^(NSDictionary *resultDic) {
            NSLog(@"reslut = %@", resultDic);
