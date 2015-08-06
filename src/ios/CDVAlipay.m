@@ -70,7 +70,10 @@
         CDVViewController *viewController = (CDVViewController *)self.viewController;
         self.alipayScheme = [viewController.settings objectForKey:@"alipay"];
         
-        if (!self.alipayScheme) {
+        if (![params objectForKey:@"scheme"]) {
+        	[self failWithCallbackID:self.currentCallbackId withMessage:@"应用scheme错误"];
+             return ;
+        } else {
         	self.alipayScheme = [params objectForKey:@"scheme"];
         }
         
