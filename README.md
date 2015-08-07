@@ -40,6 +40,7 @@
 	# cb_failure:调用失败回调方法
 	# json: {
 	    pay_info: 支付信息
+	    scheme: 支付成功后返回的scheme
 	    sign: 密钥
 	  }
 ```
