@@ -29,13 +29,14 @@
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
       <activity android:name="com.alipay.sdk.app.H5PayActivity"
         android:configChanges="orientation|keyboardHidden|navigation"
-        android:exported="false" android:screenOrientation="behind"
+        android:exported="false" 
+        android:screenOrientation="behind"
         android:windowSoftInputMode="adjustResize|stateHidden">
       </activity>
     </config-file>
 
     <source-file src="src/android/Alipay.java" target-dir="src/com/qdc/plugins/alipay" />
-    <source-file src="libs/android/alipaySDK-20150610.jar" target-dir="libs" />
+    <source-file src="libs/android/alipaySDK-20150818.jar" target-dir="libs" />
   </platform>
 
   <!-- ios -->
