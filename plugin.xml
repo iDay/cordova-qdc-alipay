@@ -36,7 +36,7 @@
     </config-file>
 
     <source-file src="src/android/Alipay.java" target-dir="src/com/qdc/plugins/alipay" />
-    <source-file src="libs/android/alipaySDK-20150610.jar" target-dir="libs" />
+    <source-file src="libs/android/alipaySDK-20150818.jar" target-dir="libs" />
   </platform>
 
   <!-- ios -->
